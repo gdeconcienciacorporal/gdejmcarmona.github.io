@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> GDE - Trail Running</title>  
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gde1.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+ <div class="container">
+        <div class="main-container">
+            <h1>PROGRAMA DE ENTRENAMIENTO GDE -Trail Running</h1>
+            <h2>Alumno: Juan Manuel</h2>
+        </div>
+            <h2>Objetivo mensual: Reconocer los pasos tanto de subida como de bajada. </h2>
+            <h2>Fase: Adquisición. </h2>
+            <h2 id ="pageTitle">Fecha proxima carrera Aconcagua Trail: 2024/02/17 </h2> 
+            <p id="result"></p> 
+            <p>Indicaciones previas:  </p>
+        
+        <div class="sub-container">
+            <h4>SEMANA 1</h4>
+            <p>Objetivo semanal: Enfasis en subidas. </p>
+            <div>
+                <h2>Entrada en calor </h2>   <p> 4 vueltas x 12 repeticiones</p>
+                <div class="image-container">  
+                    <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                      <source src="Video1.mp4" type="video/mp4">
+                      </video>
+                   </div>
+                 <div class="image-container">  
+                    <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                      <source src="Video2.mp4" type="video/mp4">
+                       </video>
+                    </div>
+            </div>
+        </div>
+
+        <div><h2> Running </h2>
+        </div>
+
+        <div class="column-container 1">           
+            <div class="column">
+                <h3>Dia 1</h3>
+                <p>Lunes en la mañana: 5km de calle al mejor ritmo posible saliendo fuerte. </p>
+                <p>Lunes en la tarde: 9km de Trail. </p>
+                <p>  - 2 km de menor a mayor.</p>
+                <p>  - 3 km 40" agiles x 40" suave. </p>
+                <p>  - 2 km fuerte. </p>
+                <p>  - 3 km mayor a menor.</p>
+            </div>
+            <div class="column">
+                <h3>Dia 2</h3>
+                <p> Miércoles: 12km Trail. </p>
+                <p>  - 3 km de menor a mayor. </p>
+                <p>  - 3 km subiendo a buenas sensaciones. </p>
+                <p>  - 2 km 30" trekking exigido x 30" trote suave. </p>
+                <p>  - 4 km de mayor a menor. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 3</h3>        
+                <p> Viernes: 11km Calle. </p>
+                <p>  - 3 km a buenas sensaciones. </p>
+                <p>  - 2 km sensaciones apretadas. </p>
+                <p>  - 6 km 20" agiles x 20"suave. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 4</h3>        
+                <p> Sábado: 9.8km Series Triangulares. </p>
+                <p>  - 6x200m  Subida fuerte  arriba descansamos 2'. </p>
+                <p>  - 6x200m Bajada fuerte abajo descansamos 2'. </p>
+                <p>  - 6x200m Pasada llano dique fria descansamos 1' entre pasada. </p>
+                <p>  - 5 km agiles por calle. </p>
+            </div>
+        </div>
+
+        <div class="small-paragraph-container">
+            <p> Método de recuperación </p>
+            <p> - duchas frías 2 minutos post entrenos después del día lunes y viernes. </p>
+        </div>
+        
+        <div id="column-container 1">
+        <canvas id="myChart-line-1"></canvas>
+        </div>
+               
+        <div class="sub-container">
+            <h4>SEMANA 2</h4>
+            <p>Objetivo semanal: Énfasis la zancada de calle.</p>
+            <div>
+                <h2>Entrada en calor </h2>   <p> 4 vueltas x 13 repeticiones </p>
+                <div class="image-container">  
+                    <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                      <source src="Video3.mp4" type="video/mp4">
+                      </video>
+                   </div>
+                 <div class="image-container">  
+                    <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                      <source src="Video4.mp4" type="video/mp4">
+                       </video>
+                    </div>
+            </div>
+        </div>
+
+        <div><h2> Running </h2>
+        </div>
+
+        <div class="column-container 2">
+            <div class="column">
+                <h3>Dia 1</h3>
+                <p>Lunes: 14 km calle. </p>
+                <p>  - 3 km de menor a mayor..</p>
+                <p>  - 2 km ágiles en lo posible en subida.</p>
+                <p>  - 4 km haciendo  30" agiles x 30" suave (no caminando).</p>
+                <p>  - 4 km bajada fuerte.</p>
+            </div>
+            <div class="column">
+                <h3>Dia 2</h3>
+                <p> Miércoles: 11 km Trail. </p>
+                <p>  - 2 km ágiles. </p>
+                <p>  - 3 km subiendo firme. </p>
+                <p>  - 2 km 40" agiles x40" caminata rapida. </p>
+                <p>  - 4 km a buenas sensaciones. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 3</h3>        
+                <p> Viernes: 9km Trail.</p>
+                <p>  - 2 km de menor a mayor. </p>
+                <p>  - 3 km subida fuerte. </p>
+                <p>  - 4 km bajada fuerte. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 4</h3>        
+                <p> Sábado: 20km Trail</p>
+                <p>  - 2 km de menos a mas.</p>
+                <p>  - 5 km 2' agiles x 2' trekking exigido.</p>
+                <p>  - 3 km trekking fuerte en lo posible en subida .</p>
+                <p>  - 10 km Buenas sensaciones.</p>
+            </div>
+        </div>
+
+        <div class="small-paragraph-container">
+            <p> Método de recuperación: </p>
+            <p> -Al finalizar el dia Sabado ducha fria de 3'. </p> 		
+        </div>
+      
+        <div id="column-container 2">
+        <canvas id="myChart-line-2"></canvas>
+        </div>   
+        <div class="image-container">
+            <img class="imagen-chica" src="logo gde blanco horizontal.png" alt="Logo Gde horizontal">
+          </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
